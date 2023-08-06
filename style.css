@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.bkWrapper{
+    height: 100vh;
+    width: 100%;
+}
+.book{
+    width:500px;
+    height: auto;
+    margin: 0 auto;
+    background: rgb(192, 192, 192);
+    padding: 40px;
+    margin-top: 80px;
+    box-shadow: 0 0 30px rgb(34, 33, 33);
+    border: 2px solid rgb(34, 33, 33) ;
+    border-radius: 15px;
+}
+.book h1{
+    padding-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+span{
+    color: rgb(12, 12, 241);
+    font-style: italic;
+}
+/* The form section */
+input,#submit{
+    height: 30px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 3px solid rgb(19, 18, 18);
+    border-top: transparent;
+    padding: 10px;
+}
+label{
+    font-size: 18px;
+}
+#submit{
+    font-size: 17px;
+    background:rgb(12, 12, 241);
+    color: rgb(243, 243, 243);
+    height: 35px;
+}
+/* alert section */
+#alert{
+    height: 30px;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: rgb(253, 6, 6);
+}
+/* books list section */
+.bksHolder{
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    display: flex;
+    margin-top: 10px;
+}
+ul{
+    list-style: none;
+    margin-top: 10px;
+}
+.clear ul{
+    color:rgb(253, 6, 6);
+    cursor: pointer;
+}
+/* Media Queries for mobile view */
+@media(max-width:600px){
+    .bkWrapper{
+        height: 100vh;
+        width: 100%;
+        margin-bottom: 80px;
+
+    }
+    .book{
+        width:300px;
+        padding: 25px;
+        margin-top: 80px;
+        box-shadow: 0 0 30px rgb(34, 33, 33);
+    }  
+    span{
+        color: rgb(12, 12, 241);
+        font-style: italic;
+        margin-top: 40px;
+    }
+    .bksHolder ul li{
+        padding:5px;
+    }
+
+}

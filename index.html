@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>BookS List</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main>
+            <div class="bkWrapper">
+                <div class="book">
+                    <h1>~BOOKS~<span><p>to</p></span>~READ~</h1>
+                    <hr>
+                    <div id="alert">
+                        <p>No New book Added!</p>
+                    </div>
+                    <form>
+                        <label>Title</label><br>
+                        <input type="text" name="title" placeholder="Book title"id="title" required>
+                        <label>Author</label><br>
+                        <input type="text" name="Author" placeholder="Author" id="Author" required><br>
+                        <label>ISBN</label><br>
+                        <input type="text" name="ISBN" placeholder="ISBN" id="ISBN" required><br>
+                        <button id="submit" type="button">Submit</button>
+                    </form>
+                    <hr>
+                    <div class="bksHolder">
+                        <div class="titleHolder">
+                            <h4>Title</h4>
+                            <ul>
+                            </ul>
+                        </div>
+                        <div class="authorHolder">
+                            <h4>Author</h4>
+                            <ul>
+                            </ul>
+                        </div>
+                        <div class="isbnHolder">
+                            <h4>ISBN</h4>
+                            <ul>
+                            </ul>
+                        </div>
+                        <div class="clear">
+                            <h4>Clear</h4>
+                            <ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>
